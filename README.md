@@ -22,8 +22,6 @@ The project aims to create a central document that outlines conventions for tech
 
 Please submit an [issue](https://github.com/redhat-documentation/glossary-of-terms-and-conventions-for-product-documentation/issues) to this project.
 
-```
-
 ## Contributing
 
 We welcome contributions from everyone who feels they have something of value that all of the community can benefit from. Follow these instructions to start contributing: [CONTRIBUTING](CONTRIBUTING.md).
@@ -34,7 +32,7 @@ This work is licensed under the [Creative Commons Attribution-ShareAlike 4.0 Int
 
 ## Building the Books Locally
 
-When you make changes to these books, it is a good practice to do a local test build to verify the book builds successfully and renders as you expect before you submit the merge request back to upstream master.
+When you make changes to these books, it is a good practice to do a local test build to verify the book builds successfully and renders as you expect before you submit the merge request back to the upstream master.
 
 ### Configuring the Build Environment
 
