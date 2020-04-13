@@ -1,0 +1,157 @@
+[[how-to-update-this-document]]
+
+This document is written in the AsciiDoc markup language and hosted in a git repository at https://github.com/redhat-documentation/glossary-of-terms-and-conventions-for-product-documentation[GitHub].
+
+You can edit this document by using:
+
+* The GitHub web user interface. See xref:web-ui-adding-or-editing-entries[Web UI: Adding and Editing Entries].
+* The `git` command-line utility. See xref:cli-adding-and-editing-entries[CLI: Adding and Editing Entries]. Previous experience with `git` and the command line is required.
+
+Once you are done with the edits, create a pull request. See xref:creating-pull-requests[Creating Pull Requests] for details.
+
+If you want to suggest an update for this document, have a general question, or want to start a discussion, open a new issue. For details, see xref:submitting-issues[].
+
+[[prerequisites]]
+[discrete]
+=== Before You Begin
+
+The _Glossary of Terms and Conventions for Product Documentation_ is stored in a https://github.com/redhat-documentation/glossary-of-terms-and-conventions-for-product-documentation[GitHub repository] and written in AsciiDoc. You need:
+
+* A GitHub account.
+* A working knowledge of GitHub.
+* Access to the Glossary of Terms and Conventions for Product Documentation https://github.com/redhat-documentation/glossary-of-terms-and-conventions-for-product-documentation[repository]
+
+Send an email to Chris Budzilowicz(ccs-mod-docs@redhat.com) asking nicely to be given access to the Glossary of Terms and Conventions for Product Documentation Project on GitHub. Please give us your GitHub username and use the following subject line: REQUESTING ACCESS
+
+[[web-ui-adding-or-editing-entries]]
+[discrete]
+==== Web UI: Adding and Editing Entries
+
+[NOTE]
+====
+Before you start, ensure that you are logged in to GitHub.
+====
+. Create a new branch.
+
+    .. On the https://github.com/redhat-documentation/glossary-of-terms-and-conventions-for-product-documentation[main repository page] click the plus button and select *New branch*.
+
+    .. Specify the name of the branch. When adding a new entry, use _wip-<name-of-the-entry>_ as the branch name, for example _wip-host-name_. When updating an existing entry, use _wip-<name-of-the-entry>-edits_ as the branch name, for example _wip-host-name-edits_.
+
+    .. Click *Create branch*.
+
+. Edit the document.
+
+    .. Navigate to the `general_conventions` or `product_conventions` directory and select the file you want to add the entry to. If a file for the product does not exist yet, create one. Use the _<product-name>.adoc_ form, for example _red-hat-virtualization.adoc_.
+
+    .. Ensure that you are in the correct branch. The branch name is listed at the beginning of the path to the file. If you are not in the correct branch, select it from the menu.
+
+    .. Click *Edit*.
+
+    .. Make the changes. Use this xref:template-for-entries[template] when adding a new entry. Entries must be added in alphabetical order.
+
+    .. If you created a new file, add the file to the `master.adoc` file. Add the file in alphabetical order under the `== Product-specific Conventions` heading. For example:
++
+[source]
+----
+ include::{includedir}/products_conventions/red-hat-virtualization.adoc[]
+----
+
+. Commit the changes.
+
+    .. Update the commit message. Be descriptive enough, "Updated the <filename> file." is not a good commit message. Use something like "Added the <entry-name> entry" or "Fixed a typo in the <entry-name> entry".
+
+    .. Click *Commit Changes*.
+
+. If you want to make additional changes, edit the file again and commit the changes.
+
+. Once you are done updating the document, create a pull request. See xref:creating-pull-requests[Creating Pull Requests] for details.
+
+[[cli-adding-and-editing-entries]]
+[discrete]
+==== CLI: Adding and Editing Entries
+
+. Clone a local copy of the `glossary-of-terms-and-conventions-for-product-documentation` git repository:
++
+----
+$ git clone git@github.com:redhat-documentation/glossary-of-terms-and-conventions-for-product-documentation.git
+----
+
+. Navigate to the cloned repository.
++
+----
+$ cd glossary-of-terms-and-conventions-for-product-documentation/
+----
+
+. Set the upstream repository.
++
+----
+$ git remote add upstream git@github.com:redhat-documentation/glossary-of-terms-and-conventions-for-product-documentation.git
+----
+
+. Fetch the latest changes from the upstream repository.
++
+----
+$ git fetch upstream
+----
+
+. Create a new branch from the upstream `master` branch. When adding a new entry, use _wip-<name-of-the-entry>_ as the branch name, for example _wip-host-name_. When updating an existing entry, use _wip-<name-of-the-entry>-edits_ as the branch name, for example _wip-host-name-edits_.
++
+----
+$ git checkout -b <name-of-the-branch> upstream/master
+----
+
+. Edit the document.
+
+    .. Navigate to the `general_conventions/` or `products_conventions/` directory and open the file you want to add the entry to. If a file for the product does not exist yet, create one. Use the _<product-name>.adoc_ form, for example _red-hat-virtualization.adoc_.
+
+    .. Make the changes. Use this xref:template-for-entries[template] when adding a new entry. Entries must be added in alphabetical order.
+
+    .. If you created a new file, add the file to the `master.adoc` file. Add the file in alphabetical order under the `== Product-specific Conventions` heading. For example:
++
+[source,subs="+macros"]
+----
+pass:quotes[include::{includedir}/products_conventions/red-hat-virtualization.adoc[]]
+----
+
+
+. Stage the changes.
++
+----
+$ git add <file>
+----
++
+You can use the `git status` command to see all the files that have changed.
+
+. Commit the changes. Be descriptive enough in the commit message, "Updated the <filename> file." is not a good commit message. Use something like "Added the <entry-name> entry" or "Fixed a typo in the <entry-name> entry".
++
+----
+$ git commit -m "<commit-message>"
+----
+
+. Push the changes.
++
+----
+$ git push origin HEAD
+----
+
+. Open a pull request. See xref:creating-pull-requests[Creating Pull Requests] for details.
+
+[[creating-pull-requests]]
+[discrete]
+==== Creating Pull Requests
+
+. Navigate to the https://github.com/redhat-documentation/glossary-of-terms-and-conventions-for-product-documentation[main repository page] and click *Pull Requests*.
+
+. Click *New pull request*.
+
+. Select the source branch from the drop-down list.
+
+. Click *Compare branches and continue*.
+
+. Click *Remove the WIP: prefix from the title*.
+
+. Optionally, write a description of your change.
+
+. Select the correct label; _General Conventions_ or _Product-specific Conventions_.
+
+. Click *Submit pull request*.
