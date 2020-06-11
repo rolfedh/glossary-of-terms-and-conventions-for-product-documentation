@@ -1,4 +1,9 @@
 = Glossary of Terms and Conventions for Product Documentation
+:doctype: book
+:toc: left
+:toclevels: 3
+:experimental:
+:linkattrs:
 
 :includedir: .
 
@@ -114,37 +119,37 @@ include::{includedir}/general_conventions/symbols.adoc[]
 
 [[product-specific-conventions]]
 == Product-specific Conventions
-include::{includedir}/products_conventions/products_conventions_overview.adoc[]
+include::{includedir}/product_conventions/products_conventions_overview.adoc[]
 
 === Azure and .NET Core
-include::{includedir}/products_conventions/azure-dotnet.adoc[]
+include::{includedir}/product_conventions/azure-dotnet.adoc[]
 
 === Red Hat AMQ
-include::{includedir}/products_conventions/amq7.adoc[]
+include::{includedir}/product_conventions/amq7.adoc[]
 
 === Red Hat Ceph Storage
-include::{includedir}/products_conventions/ceph.adoc[]
+include::{includedir}/product_conventions/ceph.adoc[]
 
 === Red Hat CloudForms
-include::{includedir}/products_conventions/red-hat-cloudforms.adoc[]
+include::{includedir}/product_conventions/red-hat-cloudforms.adoc[]
 
 === Red Hat JBoss BRMS and Red Hat JBoss BPM Suite
-include::{includedir}/products_conventions/bxms.adoc[]
+include::{includedir}/product_conventions/bxms.adoc[]
 
 === Red Hat JBoss Enterprise Application Platform
-include::{includedir}/products_conventions/jboss-eap.adoc[]
+include::{includedir}/product_conventions/jboss-eap.adoc[]
 
 === Red Hat JBoss Fuse
-include::{includedir}/products_conventions/fuse.adoc[]
+include::{includedir}/product_conventions/fuse.adoc[]
 
 === Red Hat OpenShift
-include::{includedir}/products_conventions/openshift.adoc[]
+include::{includedir}/product_conventions/openshift.adoc[]
 
 === Red Hat OpenStack Platform
-include::{includedir}/products_conventions/red-hat-openstack-platform.adoc[]
+include::{includedir}/product_conventions/red-hat-openstack-platform.adoc[]
 
 === Red Hat Satellite 6
-include::{includedir}/products_conventions/red-hat-satellite6.adoc[]
+include::{includedir}/product_conventions/red-hat-satellite6.adoc[]
 
 === Red Hat Virtualization
-include::{includedir}/products_conventions/red-hat-virtualization.adoc[]
+include::{includedir}/product_conventions/red-hat-virtualization.adoc[]

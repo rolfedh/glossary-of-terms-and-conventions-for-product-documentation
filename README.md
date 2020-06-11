@@ -8,11 +8,9 @@ You can view the latest build of the guide here:
 
 https://redhat-documentation.github.io/glossary-of-terms-and-conventions-for-product-documentation/
 
-
 ## What is the Purpose of the Glossary of Terms and Conventions for Product Documentation?
 
 The purpose of the Documentation Conventions project is to define and apply a set of technical language conventions used by all documentation teams at Red Hat that will improve the consistency of language across Red Hat documentation. The Glossary of Terms and Convention for Product Documentation contains general and product-specific terms. Please help us expand the glossary if you notice any terms that are missing.
-
 
 ## Why Are We Doing This?
 
@@ -24,7 +22,7 @@ Please submit an [issue](https://github.com/redhat-documentation/glossary-of-ter
 
 ## Contributing
 
-We welcome contributions from everyone who feels they have something of value that all of the community can benefit from. Follow these instructions to start contributing: [CONTRIBUTING](CONTRIBUTING.md).
+We welcome contributions from everyone who feels they have something of value that all of the community can benefit from. Please see our [guidelines](https://github.com/redhat-documentation/glossary-of-terms-and-conventions-for-product-documentation/blob/master/general_information/updating.adoc) on updating the glossary.
 
 ## License
 
@@ -43,6 +41,6 @@ You can build the book locally using [AsciiDoctor](http://asciidoctor.org/docs/#
 To build and view the document locally, run:
 
 ```
-$ asciidoctor glossary-of-terms-and-conventions-for-product-documentation/master.adoc
-$ <www-browser-of-choice> glossary-of-terms-and-conventions-for-product-documentation/master.html
+$ asciidoctor glossary-of-terms-and-conventions-for-product-documentation/community/master.adoc
+$ <www-browser-of-choice> glossary-of-terms-and-conventions-for-product-documentation/community/master.html
 ```

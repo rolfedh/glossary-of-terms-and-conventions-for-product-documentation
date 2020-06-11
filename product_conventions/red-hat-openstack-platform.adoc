@@ -10,7 +10,7 @@ Upstream references: {openstack-glossary}
 [discrete]
 [[director]]
 ==== director (noun)
-*Description*: The Red Hat OpenStack Platform director is a toolset for installing and managing a complete OpenStack environment. Write in lower case. Use with the article 'the' where appropriate. For example: _"Create an OpenStack environment with the director."_
+*Description*: Red Hat OpenStack Platform director is a toolset that you can use to install and manage a complete OpenStack environment. Write in lower case. Do not use the article 'the' where appropriate. For example: _"Create an OpenStack environment with director."_, and _"Use the director tool to create an OpenStack environment."_
 
 *Use it*: yes
 

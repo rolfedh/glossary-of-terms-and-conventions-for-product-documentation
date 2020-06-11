@@ -21,7 +21,7 @@ The _Glossary of Terms and Conventions for Product Documentation_ is stored in a
 * A working knowledge of GitHub.
 * Access to the Glossary of Terms and Conventions for Product Documentation https://github.com/redhat-documentation/glossary-of-terms-and-conventions-for-product-documentation[repository]
 
-Send an email to Chris Budzilowicz(ccs-mod-docs@redhat.com) asking nicely to be given access to the Glossary of Terms and Conventions for Product Documentation Project on GitHub. Please give us your GitHub username and use the following subject line: REQUESTING ACCESS
+Send an email to Chris Budzilowicz(cbudzilo@redhat.com) requesting access to the Glossary of Terms and Conventions for Product Documentation Project on GitHub. Please give us your GitHub username and use the following subject line: REQUESTING ACCESS
 
 [[web-ui-adding-or-editing-entries]]
 [discrete]
